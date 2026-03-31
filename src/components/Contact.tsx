@@ -73,7 +73,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Camilla Rocha Brows Location"
-                className="grayscale"
+                className=""
               />
             </div>
           </div>
