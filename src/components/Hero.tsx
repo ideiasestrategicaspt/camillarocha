@@ -18,12 +18,14 @@ const Hero = () => {
           alt="Camilla Rocha"
           className="w-full h-full object-cover object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
+        {/* Warm glow overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-gold/3" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 md:py-40">
-        <div className="max-w-xl">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-foreground mb-6">
+        <div className="max-w-xl animate-fade-in">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-foreground mb-6 glow-text">
             {t.headline}
           </h1>
           <p className="font-body text-sm md:text-base tracking-wide text-muted-foreground mb-2">
@@ -37,7 +39,7 @@ const Hero = () => {
             {[t.badge1, t.badge2, t.badge3].map((b) => (
               <span
                 key={b}
-                className="font-body text-[10px] tracking-[0.25em] uppercase text-muted-foreground border-b border-border pb-1"
+                className="font-body text-[10px] tracking-[0.25em] uppercase text-gold-dark border-b border-gold/40 pb-1"
               >
                 {b}
               </span>
@@ -48,7 +50,7 @@ const Hero = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block font-body text-xs tracking-[0.2em] uppercase bg-primary text-primary-foreground px-8 py-4 hover:opacity-90 transition-opacity"
+            className="btn-gold inline-block"
           >
             {t.cta}
           </a>

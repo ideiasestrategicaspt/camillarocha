@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
 import { X } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const WHATSAPP_URL =
   "https://wa.me/352XXXXXXXXX?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
@@ -14,42 +15,32 @@ const Services = () => {
   const bookLabel = translations.bookBtn[lang];
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
+  const { ref: introRef, visible: introVisible } = useScrollReveal();
+
   return (
-    <section id="services" className="py-24 md:py-32 bg-warm-alt">
+    <section id="services" className="py-24 md:py-32 section-gradient-alt">
       <div className="max-w-4xl mx-auto px-6">
-        <p className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-20">
-          {intro}
-        </p>
+        <div
+          ref={introRef}
+          className={`transition-all duration-1000 ${introVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        >
+          <p className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-20">
+            {intro}
+          </p>
+        </div>
 
         <div className="space-y-12">
           {services.map((s, i) => (
-            <div
+            <ServiceItem
               key={s.name}
-              className="border-b border-border pb-10"
-            >
-              <h3 className="font-display text-xl md:text-2xl font-light text-foreground mb-2">
-                {s.name}
-              </h3>
-              <p className="font-body text-sm text-muted-foreground mb-6">
-                {s.short}
-              </p>
-              <div className="flex gap-4">
-                <button
-                  onClick={() => setOpenIdx(i)}
-                  className="font-body text-xs tracking-[0.15em] uppercase border border-foreground text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  {discoverLabel}
-                </button>
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-body text-xs tracking-[0.15em] uppercase bg-primary text-primary-foreground px-6 py-3 hover:opacity-90 transition-opacity"
-                >
-                  {bookLabel}
-                </a>
-              </div>
-            </div>
+              name={s.name}
+              short={s.short}
+              index={i}
+              discoverLabel={discoverLabel}
+              bookLabel={bookLabel}
+              onDiscover={() => setOpenIdx(i)}
+              whatsappUrl={WHATSAPP_URL}
+            />
           ))}
         </div>
       </div>
@@ -61,7 +52,8 @@ const Services = () => {
           onClick={() => setOpenIdx(null)}
         >
           <div
-            className="bg-background max-w-lg w-full p-10 md:p-14 relative animate-fade-in"
+            className="bg-background max-w-lg w-full p-10 md:p-14 relative animate-fade-in-scale shadow-2xl"
+            style={{ boxShadow: "0 20px 60px -12px hsl(32 40% 72% / 0.2)" }}
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -80,7 +72,7 @@ const Services = () => {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block font-body text-xs tracking-[0.2em] uppercase bg-primary text-primary-foreground px-8 py-4 hover:opacity-90 transition-opacity"
+              className="btn-gold inline-block"
             >
               {bookLabel}
             </a>
@@ -88,6 +80,50 @@ const Services = () => {
         </div>
       )}
     </section>
+  );
+};
+
+interface ServiceItemProps {
+  name: string;
+  short: string;
+  index: number;
+  discoverLabel: string;
+  bookLabel: string;
+  onDiscover: () => void;
+  whatsappUrl: string;
+}
+
+const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, whatsappUrl }: ServiceItemProps) => {
+  const { ref, visible } = useScrollReveal(0.1);
+
+  return (
+    <div
+      ref={ref}
+      className={`border-b border-gold/20 pb-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+    >
+      <h3 className="font-display text-xl md:text-2xl font-light text-foreground mb-2">
+        {name}
+      </h3>
+      <p className="font-body text-sm text-muted-foreground mb-6">
+        {short}
+      </p>
+      <div className="flex gap-4">
+        <button
+          onClick={onDiscover}
+          className="btn-outline-gold"
+        >
+          {discoverLabel}
+        </button>
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-gold"
+        >
+          {bookLabel}
+        </a>
+      </div>
+    </div>
   );
 };
 
