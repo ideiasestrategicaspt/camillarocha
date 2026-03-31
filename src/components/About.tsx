@@ -13,15 +13,16 @@ const About = () => {
       {/* About intro */}
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="aspect-[3/4] overflow-hidden">
+          <div className="aspect-[3/4] overflow-hidden relative rounded-sm">
             <img
               src={workingImg}
               alt="Camilla Rocha"
               loading="lazy"
               width={896}
               height={1184}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-80"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-background/40" />
           </div>
           <div>
             <p className="font-display text-2xl md:text-3xl font-light leading-relaxed text-foreground mb-6">
