@@ -15,8 +15,11 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="aspect-[3/4] overflow-hidden">
             <img
-              src={portraitImg}
+              src={workingImg}
               alt="Camilla Rocha"
+              loading="lazy"
+              width={896}
+              height={1184}
               className="w-full h-full object-cover"
             />
           </div>
