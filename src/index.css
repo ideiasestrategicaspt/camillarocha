@@ -15,7 +15,7 @@
     --popover: 36 33% 96%;
     --popover-foreground: 0 0% 12%;
 
-    --primary: 0 0% 12%;
+    --primary: 32 35% 42%;
     --primary-foreground: 36 33% 96%;
 
     --secondary: 36 15% 90%;
@@ -32,14 +32,16 @@
 
     --border: 30 15% 85%;
     --input: 30 15% 85%;
-    --ring: 0 0% 12%;
+    --ring: 32 35% 42%;
 
     --radius: 0.25rem;
 
     --warm-bg: 36 33% 96%;
     --warm-bg-alt: 36 25% 93%;
     --warm-bg-dark: 30 20% 88%;
-    --gold-accent: 38 40% 70%;
+    --gold-accent: 32 40% 72%;
+    --gold-glow: 32 50% 62%;
+    --gold-dark: 30 35% 38%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -74,6 +76,46 @@
   }
   .font-body {
     font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply font-body text-xs tracking-[0.2em] uppercase px-8 py-4 transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--gold-accent)), hsl(var(--gold-glow)));
+    color: hsl(var(--primary-foreground));
+    box-shadow: 0 4px 20px -4px hsl(var(--gold-accent) / 0.4);
+  }
+  .btn-gold:hover {
+    box-shadow: 0 6px 30px -4px hsl(var(--gold-glow) / 0.6);
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+  }
+
+  .btn-outline-gold {
+    @apply font-body text-xs tracking-[0.15em] uppercase px-6 py-3 transition-all duration-300;
+    border: 1px solid hsl(var(--gold-accent));
+    color: hsl(var(--foreground));
+  }
+  .btn-outline-gold:hover {
+    background: hsl(var(--gold-accent) / 0.1);
+    box-shadow: 0 0 20px -4px hsl(var(--gold-accent) / 0.3);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 40px hsl(var(--gold-accent) / 0.3), 0 0 80px hsl(var(--gold-accent) / 0.1);
+  }
+
+  .img-glow {
+    box-shadow: 0 8px 40px -8px hsl(var(--gold-accent) / 0.25);
+  }
+
+  .section-gradient {
+    background: linear-gradient(180deg, hsl(var(--warm-bg)) 0%, hsl(var(--warm-bg-alt)) 50%, hsl(var(--warm-bg)) 100%);
+  }
+
+  .section-gradient-alt {
+    background: linear-gradient(180deg, hsl(var(--warm-bg-alt)) 0%, hsl(var(--warm-bg-dark) / 0.5) 50%, hsl(var(--warm-bg-alt)) 100%);
   }
 }
 
