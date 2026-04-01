@@ -24,12 +24,12 @@ const Services = () => {
           ref={introRef}
           className={`transition-all duration-1000 ${introVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <p className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-20">
+          <p className="font-display text-lg md:text-3xl font-light text-foreground text-center mb-20">
             {intro}
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-1 md:space-y-12 md:gap-0">
           {services.map((s, i) => (
             <ServiceItem
               key={s.name}
@@ -99,18 +99,18 @@ const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, whatsa
   return (
     <div
       ref={ref}
-      className={`border-b border-gold/20 pb-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+      className={`border-b md:border-b border-gold/20 pb-4 md:pb-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
     >
-      <h3 className="font-display text-xl md:text-2xl font-light text-foreground mb-2">
+      <h3 className="font-display text-base md:text-2xl font-light text-foreground mb-1 md:mb-2">
         {name}
       </h3>
-      <p className="font-body text-sm text-muted-foreground mb-6">
+      <p className="font-body text-[11px] md:text-sm text-muted-foreground mb-3 md:mb-6">
         {short}
       </p>
-      <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row gap-2 md:gap-4">
         <button
           onClick={onDiscover}
-          className="btn-outline-gold"
+          className="btn-outline-gold text-[10px] md:text-xs px-3 py-2 md:px-6 md:py-3"
         >
           {discoverLabel}
         </button>
@@ -118,7 +118,7 @@ const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, whatsa
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-gold"
+          className="btn-gold text-[10px] md:text-xs px-3 py-2 md:px-10 md:py-5"
         >
           {bookLabel}
         </a>
