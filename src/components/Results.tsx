@@ -68,7 +68,7 @@ const Results = () => {
             </div>
 
             {/* Right image (blurred) */}
-            <div className="hidden md:block w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
+            <div className="w-20 md:w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
               <img
                 src={images[getIndex(1)]}
                 alt="Résultat"
