@@ -13,7 +13,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-gold/10">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#top">
-          <img src={logo} alt="Camilla Rocha Brows" className="h-8 md:h-8" />
+          <img src={logo} alt="Camilla Rocha Brows" className="h-5 md:h-8" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 font-body text-xs tracking-[0.2em] uppercase text-muted-foreground">
