@@ -24,7 +24,7 @@ const Services = () => {
           ref={introRef}
           className={`transition-all duration-1000 ${introVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <p className="font-display text-2xl md:text-3xl font-light text-foreground text-center mb-20">
+          <p className="font-display text-lg md:text-3xl font-light text-foreground text-center mb-20">
             {intro}
           </p>
         </div>
