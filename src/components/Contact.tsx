@@ -42,7 +42,7 @@ const Contact = () => {
                   <p className="font-body text-sm text-muted-foreground whitespace-pre-line">{loc.hours}</p>
                 </div>
               </div>
-              <div className="flex gap-6 pt-4">
+              <div className="flex flex-col gap-4 pt-4">
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
@@ -56,7 +56,7 @@ const Contact = () => {
                   href={INSTAGRAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-body text-xs tracking-[0.15em] uppercase text-muted-foreground hover:text-gold transition-colors"
+                  className="flex items-center gap-2 font-body text-xs tracking-[0.15em] uppercase text-muted-foreground hover:text-gold transition-colors"
                 >
                   Instagram
                 </a>
