@@ -25,13 +25,13 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 md:py-40">
         <div className="max-w-xl animate-fade-in">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-foreground mb-6 glow-text">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-foreground mb-6 glow-text drop-shadow-lg">
             {t.headline}
           </h1>
-          <p className="font-body text-sm md:text-base tracking-wide text-muted-foreground mb-2">
+          <p className="font-body text-base md:text-lg tracking-wide text-foreground/80 mb-2 font-medium">
             {t.sub}
           </p>
-          <p className="font-body text-sm tracking-wide text-muted-foreground mb-10">
+          <p className="font-body text-sm md:text-base tracking-wide text-muted-foreground mb-10">
             {t.experience}
           </p>
 

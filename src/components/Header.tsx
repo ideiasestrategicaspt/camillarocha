@@ -16,10 +16,10 @@ const Header = () => {
           <img src={logo} alt="Camilla Rocha Brows" className="h-6 md:h-8" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-8 font-body text-xs tracking-[0.2em] uppercase text-muted-foreground">
+        <nav className="flex items-center gap-4 md:gap-8 font-body text-[10px] md:text-xs tracking-[0.2em] uppercase text-muted-foreground">
           <a href="#services" className="hover:text-gold transition-colors">{nav.services}</a>
-          <a href="#results" className="hover:text-gold transition-colors">{nav.results}</a>
-          <a href="#about" className="hover:text-gold transition-colors">{nav.about}</a>
+          <a href="#results" className="hover:text-gold transition-colors hidden md:inline">{nav.results}</a>
+          <a href="#about" className="hover:text-gold transition-colors hidden md:inline">{nav.about}</a>
           <a href="#contact" className="hover:text-gold transition-colors">{nav.contact}</a>
         </nav>
 
