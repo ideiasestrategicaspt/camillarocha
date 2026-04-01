@@ -35,56 +35,66 @@ const Results = () => {
         </h2>
         <div className="mx-auto w-16 h-px bg-gradient-to-r from-transparent via-gold to-transparent mb-16" />
 
-        {/* Carousel */}
-        <div className="relative flex items-center justify-center gap-4 md:gap-6">
-          {/* Left arrow */}
-          <button
-            onClick={prev}
-            className="z-10 flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
-            aria-label="Previous"
-          >
-            <ChevronLeft size={20} />
-          </button>
+        {/* Carousel - Mobile: vertical stack / Desktop: horizontal row */}
+        <div className="relative">
+          {/* Desktop layout */}
+          <div className="hidden md:flex items-center justify-center gap-6">
+            <button
+              onClick={prev}
+              className="z-10 flex-shrink-0 w-12 h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
+              aria-label="Previous"
+            >
+              <ChevronLeft size={20} />
+            </button>
 
-          {/* Images row */}
-          <div className="flex items-center justify-center gap-3 md:gap-5">
-            {/* Left image (blurred) */}
-            <div className="w-20 md:w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
-              <img
-                src={images[getIndex(-1)]}
-                alt="Résultat"
-                className="w-full h-full object-cover filter blur-[2px] scale-105"
-              />
+            <div className="flex items-center justify-center gap-5">
+              <div className="w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
+                <img src={images[getIndex(-1)]} alt="Résultat" className="w-full h-full object-cover filter blur-[2px] scale-105" />
+              </div>
+              <div className="w-80 lg:w-96 aspect-square overflow-hidden rounded-sm relative flex-shrink-0 shadow-[0_12px_50px_-8px_hsl(var(--gold-accent)/0.35)]">
+                <img src={images[current]} alt="Résultat avant/après" className="w-full h-full object-cover transition-all duration-500" />
+                <div className="absolute inset-0 rounded-sm ring-1 ring-gold/20" />
+              </div>
+              <div className="w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
+                <img src={images[getIndex(1)]} alt="Résultat" className="w-full h-full object-cover filter blur-[2px] scale-105" />
+              </div>
             </div>
 
-            {/* Center image (highlighted) */}
-            <div className="w-72 md:w-80 lg:w-96 aspect-square overflow-hidden rounded-sm relative flex-shrink-0 shadow-[0_12px_50px_-8px_hsl(var(--gold-accent)/0.35)]">
-              <img
-                src={images[current]}
-                alt="Résultat avant/après"
-                className="w-full h-full object-cover transition-all duration-500"
-              />
-              <div className="absolute inset-0 rounded-sm ring-1 ring-gold/20" />
-            </div>
-
-            {/* Right image (blurred) */}
-            <div className="w-20 md:w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
-              <img
-                src={images[getIndex(1)]}
-                alt="Résultat"
-                className="w-full h-full object-cover filter blur-[2px] scale-105"
-              />
-            </div>
+            <button
+              onClick={next}
+              className="z-10 flex-shrink-0 w-12 h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
+              aria-label="Next"
+            >
+              <ChevronRight size={20} />
+            </button>
           </div>
 
-          {/* Right arrow */}
-          <button
-            onClick={next}
-            className="z-10 flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
-            aria-label="Next"
-          >
-            <ChevronRight size={20} />
-          </button>
+          {/* Mobile layout: vertical stack */}
+          <div className="flex md:hidden flex-col items-center gap-4">
+            <div className="w-full aspect-[4/3] overflow-hidden rounded-sm relative shadow-[0_12px_50px_-8px_hsl(var(--gold-accent)/0.35)]">
+              <img src={images[current]} alt="Résultat avant/après" className="w-full h-full object-cover transition-all duration-500" />
+              <div className="absolute inset-0 rounded-sm ring-1 ring-gold/20" />
+            </div>
+            <div className="w-full aspect-[4/3] overflow-hidden rounded-sm opacity-50">
+              <img src={images[getIndex(1)]} alt="Résultat" className="w-full h-full object-cover filter blur-[1px]" />
+            </div>
+            <div className="flex items-center gap-4 mt-2">
+              <button
+                onClick={prev}
+                className="w-10 h-10 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold active:scale-95 transition-all"
+                aria-label="Previous"
+              >
+                <ChevronLeft size={18} />
+              </button>
+              <button
+                onClick={next}
+                className="w-10 h-10 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold active:scale-95 transition-all"
+                aria-label="Next"
+              >
+                <ChevronRight size={18} />
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* Dots */}
