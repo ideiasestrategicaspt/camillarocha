@@ -102,10 +102,10 @@ const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, whatsa
       className={`bg-card/60 md:bg-transparent border border-gold/15 md:border-0 md:border-b md:border-gold/20 rounded-lg md:rounded-none p-3 md:p-0 md:pb-10 transition-all duration-700 active:scale-[0.97] md:active:scale-100 shadow-sm md:shadow-none active:shadow-lg md:active:shadow-none flex flex-row md:flex-col items-center md:items-start gap-3 md:gap-0 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
     >
       <div className="flex-1 min-w-0">
-        <h3 className="font-display text-sm md:text-2xl font-light text-foreground mb-0.5 md:mb-2 text-left">
+        <h3 className="font-display text-base md:text-2xl font-light text-foreground mb-0.5 md:mb-2 text-left">
           {name}
         </h3>
-        <p className="font-body text-[10px] md:text-sm text-muted-foreground text-left line-clamp-2 md:line-clamp-none md:mb-6">
+        <p className="font-body text-xs md:text-sm text-muted-foreground text-left line-clamp-2 md:line-clamp-none md:mb-6">
           {short}
         </p>
       </div>
