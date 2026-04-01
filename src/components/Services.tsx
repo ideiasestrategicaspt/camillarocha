@@ -109,10 +109,10 @@ const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, whatsa
           {short}
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-1.5 md:gap-4 flex-shrink-0">
+      <div className="flex flex-col md:flex-row gap-1 md:gap-4 flex-shrink-0">
         <button
           onClick={onDiscover}
-          className="btn-outline-gold text-[9px] md:text-xs px-3 py-1.5 md:px-6 md:py-3 active:scale-95 transition-transform whitespace-nowrap"
+          className="btn-outline-gold text-[8px] md:text-xs px-2 py-1 md:px-6 md:py-3 active:scale-95 transition-transform whitespace-nowrap"
         >
           {discoverLabel}
         </button>
@@ -120,7 +120,7 @@ const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, whatsa
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-gold text-[9px] md:text-xs px-3 py-1.5 md:px-10 md:py-5 active:scale-95 transition-transform text-center whitespace-nowrap"
+          className="btn-gold text-[8px] md:text-xs px-2 py-1 md:px-10 md:py-5 active:scale-95 transition-transform text-center whitespace-nowrap"
         >
           {bookLabel}
         </a>
