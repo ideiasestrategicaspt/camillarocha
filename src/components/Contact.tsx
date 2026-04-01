@@ -47,7 +47,7 @@ const Contact = () => {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-body tracking-[0.15em] uppercase text-muted-foreground hover:text-gold transition-colors text-xs"
+                  className="flex items-center gap-2 font-body tracking-[0.15em] uppercase text-muted-foreground hover:text-gold transition-colors text-sm"
                 >
                   <MessageCircle size={16} />
                   WhatsApp
@@ -56,7 +56,7 @@ const Contact = () => {
                   href={INSTAGRAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-body tracking-[0.15em] uppercase text-muted-foreground hover:text-gold transition-colors text-xs"
+                  className="flex items-center gap-2 font-body tracking-[0.15em] uppercase text-muted-foreground hover:text-gold transition-colors text-sm"
                 >
                   Instagram
                 </a>
