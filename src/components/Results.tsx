@@ -6,11 +6,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
   "/images/result-1.jpeg",
-  "/images/result-2.png",
-  "/images/result-3.jpg",
+  "/images/result-2.jpeg",
+  "/images/result-3.png",
   "/images/result-4.jpg",
-  "/images/result-5.jpeg",
-  "/images/result-6.jpg",
+  "/images/result-5.jpg",
+  "/images/result-6.jpeg",
+  "/images/result-7.jpg",
 ];
 
 const Results = () => {
