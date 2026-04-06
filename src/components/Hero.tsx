@@ -16,7 +16,7 @@ const Hero = () => {
         <img
           src={heroImg}
           alt="Camilla Rocha"
-          className="w-full h-full object-cover object-[center_15%] md:object-[center_15%]"
+          className="w-full h-full object-cover object-[center_15%] md:object-[center_25%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
         {/* Warm glow overlay */}
