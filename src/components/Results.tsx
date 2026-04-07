@@ -4,15 +4,15 @@ import { translations } from "@/lib/translations";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import result1 from "@/assets/result-1.jpeg";
-import result2 from "@/assets/result-2.jpeg";
-import result3 from "@/assets/result-3.png";
-import result4 from "@/assets/result-4.jpg";
-import result5 from "@/assets/result-5.jpg";
-import result6 from "@/assets/result-6.jpeg";
-import result7 from "@/assets/result-7.jpg";
-
-const images = [result1, result2, result3, result4, result5, result6, result7];
+const images = [
+  "/images/result-1.jpeg",
+  "/images/result-2.jpeg",
+  "/images/result-3.png",
+  "/images/result-4.jpg",
+  "/images/result-5.jpg",
+  "/images/result-6.jpeg",
+  "/images/result-7.jpg",
+];
 
 const Results = () => {
   const { lang } = useLang();
