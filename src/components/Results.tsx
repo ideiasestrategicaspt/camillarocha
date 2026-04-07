@@ -3,15 +3,15 @@ import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import result1 from "@/assets/result-carousel-1.jpeg";
-import result2 from "@/assets/result-carousel-2.jpeg";
-import result3 from "@/assets/result-carousel-3.png";
-import result4 from "@/assets/result-carousel-4.jpg";
-import result5 from "@/assets/result-carousel-5.jpg";
-import result6 from "@/assets/result-carousel-6.jpeg";
-import result7 from "@/assets/result-carousel-7.jpg";
+import carousel1 from "@/assets/carousel-1.jpeg";
+import carousel2 from "@/assets/carousel-2.jpeg";
+import carousel3 from "@/assets/carousel-3.png";
+import carousel4 from "@/assets/carousel-4.jpg";
+import carousel5 from "@/assets/carousel-5.jpg";
+import carousel6 from "@/assets/carousel-6.jpeg";
+import carousel7 from "@/assets/carousel-7.jpg";
 
-const images = [result1, result2, result3, result4, result5, result6, result7];
+const images = [carousel1, carousel2, carousel3, carousel4, carousel5, carousel6, carousel7];
 
 const Results = () => {
   const { lang } = useLang();
@@ -28,7 +28,7 @@ const Results = () => {
   );
 
   return (
-    <section id="results" className="py-24 md:py-32 section-gradient overflow-hidden" data-v="5">
+    <section id="results" className="py-24 md:py-32 section-gradient overflow-hidden" data-v="6">
       <div
         ref={ref}
         className={`max-w-6xl mx-auto px-6 transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
@@ -41,7 +41,7 @@ const Results = () => {
         <div className="relative flex items-center justify-center gap-3 px-1 sm:gap-4 md:gap-6">
           <button
             onClick={prev}
-            className="z-10 flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
+            className="z-10 flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300"
             aria-label="Previous"
           >
             <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -49,37 +49,22 @@ const Results = () => {
 
           <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-5 min-w-0">
             <div className="hidden sm:block w-24 md:w-44 lg:w-52 aspect-[4/5] overflow-hidden rounded-sm flex-shrink-0 opacity-45">
-              <img
-                src={slides[0]}
-                alt="Resultado anterior"
-                className="w-full h-full object-cover blur-[2px] scale-105"
-                loading="lazy"
-              />
+              <img src={slides[0]} alt="Resultado anterior" className="w-full h-full object-cover blur-[2px] scale-105" loading="lazy" />
             </div>
 
             <div className="w-56 sm:w-64 md:w-80 lg:w-96 aspect-[4/5] overflow-hidden rounded-sm relative flex-shrink-0 shadow-[0_12px_50px_-8px_hsl(var(--gold-accent)/0.35)]">
-              <img
-                src={slides[1]}
-                alt="Resultado principal do carrossel"
-                className="w-full h-full object-cover transition-all duration-500"
-                loading="eager"
-              />
+              <img src={slides[1]} alt="Resultado principal" className="w-full h-full object-cover transition-all duration-500" loading="eager" />
               <div className="absolute inset-0 rounded-sm ring-1 ring-gold/20" />
             </div>
 
             <div className="hidden sm:block w-24 md:w-44 lg:w-52 aspect-[4/5] overflow-hidden rounded-sm flex-shrink-0 opacity-45">
-              <img
-                src={slides[2]}
-                alt="Próximo resultado"
-                className="w-full h-full object-cover blur-[2px] scale-105"
-                loading="lazy"
-              />
+              <img src={slides[2]} alt="Próximo resultado" className="w-full h-full object-cover blur-[2px] scale-105" loading="lazy" />
             </div>
           </div>
 
           <button
             onClick={next}
-            className="z-10 flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
+            className="z-10 flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300"
             aria-label="Next"
           >
             <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -92,9 +77,7 @@ const Results = () => {
               key={i}
               onClick={() => setCurrent(i)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                i === current
-                  ? "bg-gold w-6"
-                  : "bg-gold/30 hover:bg-gold/50"
+                i === current ? "bg-gold w-6" : "bg-gold/30 hover:bg-gold/50"
               }`}
               aria-label={`Image ${i + 1}`}
             />
