@@ -37,20 +37,20 @@ const Results = () => {
         <div className="mx-auto w-16 h-px bg-gradient-to-r from-transparent via-gold to-transparent mb-16" />
 
         {/* Carousel */}
-        <div className="relative flex items-center justify-center gap-4 md:gap-6">
+        <div className="relative flex items-center justify-center gap-2 sm:gap-4 md:gap-6 px-2">
           {/* Left arrow */}
           <button
             onClick={prev}
-            className="z-10 flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
+            className="z-10 flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
             aria-label="Previous"
           >
-            <ChevronLeft size={20} />
+            <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
 
           {/* Images row */}
-          <div className="flex items-center justify-center gap-3 md:gap-5">
-            {/* Left image (blurred) */}
-            <div className="w-20 md:w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-5 min-w-0">
+            {/* Left image (blurred) — hidden on small mobile */}
+            <div className="hidden sm:block w-24 md:w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
               <img
                 src={images[getIndex(-1)]}
                 alt="Résultat"
@@ -59,7 +59,7 @@ const Results = () => {
             </div>
 
             {/* Center image (highlighted) */}
-            <div className="w-72 md:w-80 lg:w-96 aspect-square overflow-hidden rounded-sm relative flex-shrink-0 shadow-[0_12px_50px_-8px_hsl(var(--gold-accent)/0.35)]">
+            <div className="w-56 sm:w-64 md:w-80 lg:w-96 aspect-square overflow-hidden rounded-sm relative flex-shrink-0 shadow-[0_12px_50px_-8px_hsl(var(--gold-accent)/0.35)]">
               <img
                 src={images[current]}
                 alt="Résultat avant/après"
@@ -68,8 +68,8 @@ const Results = () => {
               <div className="absolute inset-0 rounded-sm ring-1 ring-gold/20" />
             </div>
 
-            {/* Right image (blurred) */}
-            <div className="w-20 md:w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
+            {/* Right image (blurred) — hidden on small mobile */}
+            <div className="hidden sm:block w-24 md:w-48 lg:w-56 aspect-square overflow-hidden rounded-sm flex-shrink-0 opacity-50">
               <img
                 src={images[getIndex(1)]}
                 alt="Résultat"
@@ -81,10 +81,10 @@ const Results = () => {
           {/* Right arrow */}
           <button
             onClick={next}
-            className="z-10 flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
+            className="z-10 flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-gold/30 bg-background/80 backdrop-blur-sm flex items-center justify-center text-gold hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 hover:shadow-[0_0_20px_-4px_hsl(var(--gold-accent)/0.4)]"
             aria-label="Next"
           >
-            <ChevronRight size={20} />
+            <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
 
