@@ -3,16 +3,15 @@ import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import result1 from "@/assets/result-carousel-1.jpeg";
+import result2 from "@/assets/result-carousel-2.jpeg";
+import result3 from "@/assets/result-carousel-3.png";
+import result4 from "@/assets/result-carousel-4.jpg";
+import result5 from "@/assets/result-carousel-5.jpg";
+import result6 from "@/assets/result-carousel-6.jpeg";
+import result7 from "@/assets/result-carousel-7.jpg";
 
-const images = [
-  "/result-carousel-1.jpeg",
-  "/result-carousel-2.jpeg",
-  "/result-carousel-3.png",
-  "/result-carousel-4.jpg",
-  "/result-carousel-5.jpg",
-  "/result-carousel-6.jpeg",
-  "/result-carousel-7.jpg",
-];
+const images = [result1, result2, result3, result4, result5, result6, result7];
 
 const Results = () => {
   const { lang } = useLang();
