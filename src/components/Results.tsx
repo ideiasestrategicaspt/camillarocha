@@ -5,13 +5,13 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "/result-1.jpeg",
-  "/result-2.jpeg",
-  "/result-3.png",
-  "/result-4.jpg",
-  "/result-5.jpg",
-  "/result-6.jpeg",
-  "/result-7.jpg",
+  "/results/result-1.jpeg",
+  "/results/result-2.jpeg",
+  "/results/result-3.png",
+  "/results/result-4.jpg",
+  "/results/result-5.jpg",
+  "/results/result-6.jpeg",
+  "/results/result-7.jpg",
 ];
 
 const Results = () => {
@@ -26,7 +26,7 @@ const Results = () => {
   const getIndex = (offset: number) => (current + offset + images.length) % images.length;
 
   return (
-    <section id="results" className="py-24 md:py-32 section-gradient overflow-hidden" data-v="2">
+    <section id="results" className="py-24 md:py-32 section-gradient overflow-hidden" data-v="3">
       <div
         ref={ref}
         className={`max-w-6xl mx-auto px-6 transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
