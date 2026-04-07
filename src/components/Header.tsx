@@ -4,7 +4,7 @@ import { translations } from "@/lib/translations";
 const WHATSAPP_URL =
   "https://wa.me/352XXXXXXXXX?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
 
-const LOGO_URL = "/e84361f0-5dcd-4c59-85df-aa4ea112a821.png";
+const LOGO_URL = "/logo-camilla.png";
 
 const Header = () => {
   const { lang, toggle } = useLang();
