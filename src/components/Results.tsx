@@ -26,7 +26,7 @@ const Results = () => {
   const getIndex = (offset: number) => (current + offset + images.length) % images.length;
 
   return (
-    <section id="results" className="py-24 md:py-32 section-gradient overflow-hidden">
+    <section id="results" className="py-24 md:py-32 section-gradient overflow-hidden" data-v="2">
       <div
         ref={ref}
         className={`max-w-6xl mx-auto px-6 transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
