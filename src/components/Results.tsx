@@ -5,13 +5,13 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "/results/result-1.jpeg",
-  "/results/result-2.jpeg",
-  "/results/result-3.png",
-  "/results/result-4.jpg",
-  "/results/result-5.jpg",
-  "/results/result-6.jpeg",
-  "/results/result-7.jpg",
+  "/result-1.jpeg",
+  "/result-2.jpeg",
+  "/result-3.png",
+  "/result-4.jpg",
+  "/result-5.jpg",
+  "/result-6.jpeg",
+  "/result-7.jpg",
 ];
 
 const Results = () => {
