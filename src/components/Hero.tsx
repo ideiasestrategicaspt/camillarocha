@@ -1,9 +1,10 @@
 import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
-import heroImg from "@/assets/camilla-portrait.jpg";
 
 const WHATSAPP_URL =
   "https://wa.me/352XXXXXXXXX?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
+
+const HERO_IMAGE_URL = "/camilla-portrait.jpg";
 
 const Hero = () => {
   const { lang } = useLang();
@@ -14,7 +15,7 @@ const Hero = () => {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src={heroImg}
+          src={HERO_IMAGE_URL}
           alt="Camilla Rocha"
           className="w-full h-full object-cover object-[center_15%] md:object-[center_25%]"
         />

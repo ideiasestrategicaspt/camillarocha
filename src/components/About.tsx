@@ -1,7 +1,8 @@
 import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
-import workingImg from "@/assets/camilla-working.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+
+const WORKING_IMAGE_URL = "/camilla-working.jpg";
 
 const About = () => {
   const { lang } = useLang();
@@ -23,7 +24,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="aspect-[3/4] overflow-hidden relative rounded-sm img-glow">
             <img
-              src={workingImg}
+              src={WORKING_IMAGE_URL}
               alt="Camilla Rocha"
               loading="lazy"
               width={896}

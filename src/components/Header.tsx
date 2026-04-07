@@ -1,9 +1,10 @@
 import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
-import logo from "@/assets/logo.png";
 
 const WHATSAPP_URL =
   "https://wa.me/352XXXXXXXXX?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
+
+const LOGO_URL = "/logo.png";
 
 const Header = () => {
   const { lang, toggle } = useLang();
@@ -13,7 +14,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-gold/10">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#top">
-          <img src={logo} alt="Camilla Rocha Brows" className="h-5 md:h-6 lg:h-8" />
+          <img src={LOGO_URL} alt="Camilla Rocha Brows" className="h-5 md:h-6 lg:h-8" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 font-body text-xs tracking-[0.2em] uppercase text-muted-foreground">
