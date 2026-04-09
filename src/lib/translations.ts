@@ -58,7 +58,7 @@ export const translations = {
       {
         name: "Nanoblading",
         short: "Poils ultra-fins tracés à la main pour un effet hyper naturel",
-        description: "Le Nanoblading est une technique de micropigmentation manuelle qui consiste à tracer des poils ultra-fins dans l'épiderme à l'aide d'une lame nano. Chaque trait est dessiné individuellement pour reproduire l'apparence d'un poil naturel, en suivant le sens de pousse et la densité existante. Le résultat est un sourcil réaliste, précis et parfaitement adapté au visage. Idéal pour les peaux normales à sèches, cette méthode offre un rendu discret et élégant, sans effet maquillé.",
+        description: "Le Nanoblading est une technique de micropigmentation manuelle qui consiste à tracer des poils ultra-fins dans l'épiderme à l'aide d'une lame nano. Chaque trait est dessiné individuellement pour reproduire l'apparence d'un poil naturel, en suivant le sens de pousse et la densité existante. Le résultat est un sourcil réaliste, précis et parfaitement adapté au visage. ",
       },
       {
         name: "Soft Shading",
