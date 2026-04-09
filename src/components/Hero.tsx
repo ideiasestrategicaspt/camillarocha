@@ -1,26 +1,24 @@
 import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
+import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_URL =
-  "https://wa.me/352661114723?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
-
-const HERO_IMAGE_URL = "/camilla-portrait.jpg";
+const BOOKING_URL = "https://camilla-rocha-brows.salonized.com/widget_bookings/new";
 
 const Hero = () => {
   const { lang } = useLang();
   const t = translations.hero[lang];
+  const whatsappMsg = translations.whatsappMsg[lang];
+  const whatsappUrl = `https://wa.me/352661114723?text=${encodeURIComponent(whatsappMsg)}`;
 
   return (
     <section id="top" className="relative min-h-screen flex items-center">
-      {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src={HERO_IMAGE_URL}
+          src="/camilla-portrait.jpg"
           alt="Camilla Rocha"
           className="w-full h-full object-cover object-[center_15%] md:object-[center_25%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
-        {/* Warm glow overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-gold/3" />
       </div>
 
@@ -47,14 +45,25 @@ const Hero = () => {
             ))}
           </div>
 
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-gold inline-block"
-          >
-            {t.cta}
-          </a>
+          <div className="flex flex-col sm:flex-row items-start gap-4">
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold inline-block"
+            >
+              {t.cta}
+            </a>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline-gold inline-flex items-center gap-2 px-6 py-3"
+            >
+              <MessageCircle size={16} />
+              WhatsApp
+            </a>
+          </div>
         </div>
       </div>
     </section>

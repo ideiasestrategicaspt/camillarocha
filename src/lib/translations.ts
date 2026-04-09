@@ -153,4 +153,9 @@ export const translations = {
   },
   discover: { fr: "Découvrir", en: "Discover" },
   bookBtn: { fr: "Prendre rendez-vous", en: "Book an appointment" },
+  whatsappBtn: { fr: "WhatsApp", en: "WhatsApp" },
+  whatsappMsg: {
+    fr: "Bonjour, je souhaite prendre rendez-vous et avoir des informations sur vos prestations.",
+    en: "Hello, I would like to book an appointment and get information about your services.",
+  },
 } as const;
