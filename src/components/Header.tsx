@@ -1,8 +1,7 @@
 import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
 
-const WHATSAPP_URL =
-  "https://wa.me/352661114723?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
+const BOOKING_URL = "https://camilla-rocha-brows.salonized.com/widget_bookings/new";
 
 const LOGO_URL = "/logo-camilla.png";
 

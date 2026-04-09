@@ -4,8 +4,7 @@ import { translations } from "@/lib/translations";
 import { X } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const WHATSAPP_URL =
-  "https://wa.me/352661114723?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
+const BOOKING_URL = "https://camilla-rocha-brows.salonized.com/widget_bookings/new";
 
 const Services = () => {
   const { lang } = useLang();
@@ -39,7 +38,7 @@ const Services = () => {
               discoverLabel={discoverLabel}
               bookLabel={bookLabel}
               onDiscover={() => setOpenIdx(i)}
-              whatsappUrl={WHATSAPP_URL}
+              bookingUrl={BOOKING_URL}
             />
           ))}
         </div>
@@ -69,7 +68,7 @@ const Services = () => {
               {services[openIdx].description}
             </p>
             <a
-              href={WHATSAPP_URL}
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold inline-block"
@@ -90,10 +89,10 @@ interface ServiceItemProps {
   discoverLabel: string;
   bookLabel: string;
   onDiscover: () => void;
-  whatsappUrl: string;
+  bookingUrl: string;
 }
 
-const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, whatsappUrl }: ServiceItemProps) => {
+const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, bookingUrl }: ServiceItemProps) => {
   const { ref, visible } = useScrollReveal(0.1);
 
   return (
@@ -117,7 +116,7 @@ const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, whatsa
           {discoverLabel}
         </button>
         <a
-          href={whatsappUrl}
+          href={bookingUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-gold text-[8px] md:text-xs px-2 py-1 md:px-10 md:py-5 active:scale-95 transition-transform text-center whitespace-nowrap"

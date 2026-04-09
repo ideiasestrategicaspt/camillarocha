@@ -3,15 +3,15 @@ import { translations } from "@/lib/translations";
 import { MapPin, Clock, MessageCircle } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const WHATSAPP_URL =
-  "https://wa.me/352661114723?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
-
+const BOOKING_URL = "https://camilla-rocha-brows.salonized.com/widget_bookings/new";
 const INSTAGRAM_URL = "https://instagram.com/camillarochabrows";
 
 const Contact = () => {
   const { lang } = useLang();
   const loc = translations.location[lang];
   const cta = translations.finalCta[lang];
+  const whatsappMsg = translations.whatsappMsg[lang];
+  const whatsappUrl = `https://wa.me/352661114723?text=${encodeURIComponent(whatsappMsg)}`;
 
   const { ref: locRef, visible: locVisible } = useScrollReveal();
   const { ref: ctaRef, visible: ctaVisible } = useScrollReveal();
@@ -44,7 +44,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col gap-4 pt-4">
                 <a
-                  href={WHATSAPP_URL}
+                  href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 font-body tracking-[0.15em] uppercase text-muted-foreground hover:text-gold transition-colors text-sm"
@@ -89,7 +89,7 @@ const Contact = () => {
           {cta.title}
         </h2>
         <a
-          href={WHATSAPP_URL}
+          href={BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-gold inline-block"
