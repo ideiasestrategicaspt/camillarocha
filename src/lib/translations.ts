@@ -115,7 +115,7 @@ export const translations = {
       {
         name: "Henna Brows",
         short: "Natural tinting for defined and structured eyebrows",
-        description: "Henna Brows is a semi-permanent coloring based on natural henna that tints both hair and skin for a visible, natural filling effect. It helps reshape the eyebrow, fill sparse areas, and intensify color. The result lasts between 2 and 4 weeks and is a gentle alternative for those who want to structure their eyebrows without micropigmentation.",
+        description: "Henna Brows is a semi-permanent coloring based on natural henna that tints both hair and skin for a visible, natural filling effect. It helps reshape the eyebrow, fill sparse areas, and intensify color. The result lasts between 7 and 10 days and is a gentle alternative for those who want to structure their eyebrows without micropigmentation.",
       },
       {
         name: "Brow Lamination",
