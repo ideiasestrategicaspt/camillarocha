@@ -3,13 +3,12 @@ import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import carousel3 from "@/assets/carousel-3.png";
 import carousel4 from "@/assets/carousel-4.jpg";
 import carousel5 from "@/assets/carousel-5.jpg";
 import carousel6 from "@/assets/carousel-6.jpeg";
 import carousel7 from "@/assets/carousel-7.jpg";
 
-const images = [carousel3, carousel4, carousel5, carousel6, carousel7];
+const images = [carousel4, carousel5, carousel6, carousel7];
 
 const Results = () => {
   const { lang } = useLang();
