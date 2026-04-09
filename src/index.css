@@ -97,10 +97,12 @@
     @apply font-body text-xs tracking-[0.15em] uppercase px-6 py-3 transition-all duration-300;
     border: 1px solid hsl(var(--gold-accent));
     color: hsl(var(--foreground));
+    box-shadow: 0 6px 24px -4px hsl(var(--gold-accent) / 0.3), 0 2px 8px -2px hsl(0 0% 0% / 0.1);
   }
   .btn-outline-gold:hover {
     background: hsl(var(--gold-accent) / 0.1);
-    box-shadow: 0 0 20px -4px hsl(var(--gold-accent) / 0.3);
+    box-shadow: 0 10px 36px -4px hsl(var(--gold-accent) / 0.45), 0 4px 12px -2px hsl(0 0% 0% / 0.15);
+    transform: translateY(-2px);
   }
 
   .glow-text {
