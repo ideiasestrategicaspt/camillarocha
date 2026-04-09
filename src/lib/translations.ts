@@ -78,7 +78,7 @@ export const translations = {
       {
         name: "Henné Sourcils",
         short: "Teinture naturelle pour des sourcils définis et structurés",
-        description: "Le Henné sourcils est une coloration semi-permanente à base de henné naturel, qui teinte à la fois les poils et la peau pour un effet de remplissage visible et naturel. Il permet de redessiner la forme du sourcil, de combler les zones clairsemées et d'intensifier la couleur. Le résultat dure entre 2 et 4 semaines et constitue une alternative douce pour celles qui souhaitent structurer leurs sourcils sans micropigmentation.",
+        description: "Le Henné sourcils est une coloration semi-permanente à base de henné naturel, qui teinte à la fois les poils et la peau pour un effet de remplissage visible et naturel. Il permet de redessiner la forme du sourcil, de combler les zones clairsemées et d'intensifier la couleur. Le résultat dure entre 7 et 10 jours semaines et constitue une alternative douce pour celles qui souhaitent structurer leurs sourcils sans micropigmentation.",
       },
       {
         name: "Brow Lamination",
@@ -115,7 +115,7 @@ export const translations = {
       {
         name: "Henna Brows",
         short: "Natural tinting for defined and structured eyebrows",
-        description: "Henna Brows is a semi-permanent coloring based on natural henna that tints both hair and skin for a visible, natural filling effect. It helps reshape the eyebrow, fill sparse areas, and intensify color. The result lasts between 2 and 4 weeks and is a gentle alternative for those who want to structure their eyebrows without micropigmentation.",
+        description: "Henna Brows is a semi-permanent coloring based on natural henna that tints both hair and skin for a visible, natural filling effect. It helps reshape the eyebrow, fill sparse areas, and intensify color. The result lasts between 7 and 10 days and is a gentle alternative for those who want to structure their eyebrows without micropigmentation.",
       },
       {
         name: "Brow Lamination",
