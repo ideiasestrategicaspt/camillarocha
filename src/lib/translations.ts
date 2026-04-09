@@ -73,7 +73,7 @@ export const translations = {
       {
         name: "Design de Sourcils",
         short: "Restructuration personnalisée selon la morphologie du visage",
-        description: "Le design de sourcils est une étude morphologique complète réalisée avant toute intervention. Camilla analyse les proportions du visage, la symétrie, le regard et les traits pour définir la forme, l'épaisseur et la courbure idéales des sourcils. Cette étape est essentielle pour garantir un résultat harmonieux, naturel et parfaitement adapté à chaque visage. Le design est réalisé au crayon, ajusté avec la cliente, et sert de base pour toute prestation de micropigmentation.",
+        description: "Le design de sourcils est une étude morphologique complète réalisée avant toute intervention. Analyse les proportions du visage, la symétrie, le regard et les traits pour définir la forme, l'épaisseur et la courbure idéales des sourcils. Cette étape est essentielle pour garantir un résultat harmonieux, naturel et parfaitement adapté à chaque visage. ",
       },
       {
         name: "Henné Sourcils",
