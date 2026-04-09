@@ -82,7 +82,7 @@
 @layer components {
   .btn-gold {
     @apply font-body text-xs tracking-[0.2em] uppercase px-10 py-5 transition-all duration-300 font-medium;
-    background: linear-gradient(135deg, hsl(var(--gold-dark)), hsl(var(--gold-glow)));
+    background: linear-gradient(135deg, hsl(var(--gold-accent)), hsl(32 55% 75%));
     color: hsl(var(--primary-foreground));
     box-shadow: 0 6px 28px -4px hsl(var(--gold-accent) / 0.5), 0 0 0 1px hsl(var(--gold-accent) / 0.15);
     letter-spacing: 0.25em;
