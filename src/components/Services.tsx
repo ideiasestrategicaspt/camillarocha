@@ -5,7 +5,7 @@ import { X } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const WHATSAPP_URL =
-  "https://wa.me/352XXXXXXXXX?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
+  "https://wa.me/352661114723?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20et%20avoir%20des%20informations%20sur%20vos%20prestations.";
 
 const Services = () => {
   const { lang } = useLang();
