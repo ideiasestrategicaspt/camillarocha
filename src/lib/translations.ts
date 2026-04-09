@@ -78,7 +78,7 @@ export const translations = {
       {
         name: "Henné Sourcils",
         short: "Teinture naturelle pour des sourcils définis et structurés",
-        description: "Le Henné sourcils est une coloration semi-permanente à base de henné naturel, qui teinte à la fois les poils et la peau pour un effet de remplissage visible et naturel. Il permet de redessiner la forme du sourcil, de combler les zones clairsemées et d'intensifier la couleur. Le résultat dure entre 2 et 4 semaines et constitue une alternative douce pour celles qui souhaitent structurer leurs sourcils sans micropigmentation.",
+        description: "Le Henné sourcils est une coloration semi-permanente à base de henné naturel, qui teinte à la fois les poils et la peau pour un effet de remplissage visible et naturel. Il permet de redessiner la forme du sourcil, de combler les zones clairsemées et d'intensifier la couleur. Le résultat dure entre 7 et 10 jours semaines et constitue une alternative douce pour celles qui souhaitent structurer leurs sourcils sans micropigmentation.",
       },
       {
         name: "Brow Lamination",
