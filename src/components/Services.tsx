@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
-import { X } from "lucide-react";
+import { X, MessageCircle } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const BOOKING_URL = "https://camilla-rocha-brows.salonized.com/widget_bookings/new";
@@ -12,7 +12,7 @@ const Services = () => {
   const intro = translations.servicesIntro[lang];
   const discoverLabel = translations.discover[lang];
   const bookLabel = translations.bookBtn[lang];
-  const whatsappLabel = translations.whatsappBtn[lang];
+  
   const whatsappMsg = translations.whatsappMsg[lang];
   const whatsappUrl = `https://wa.me/352661114723?text=${encodeURIComponent(whatsappMsg)}`;
   const [openIdx, setOpenIdx] = useState<number | null>(null);
@@ -56,9 +56,10 @@ const Services = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-outline-gold inline-block"
+            className="btn-outline-gold inline-flex items-center gap-2 px-6 py-3"
           >
-            {whatsappLabel}
+            <MessageCircle size={16} />
+            WhatsApp
           </a>
         </div>
       </div>
