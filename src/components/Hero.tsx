@@ -18,8 +18,8 @@ const Hero = () => {
           alt="Camilla Rocha"
           className="w-full h-full object-cover object-[center_15%] md:object-[center_25%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-gold/3" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-gold/3 via-transparent to-gold/2" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 md:py-40">
