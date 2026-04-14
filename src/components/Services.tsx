@@ -34,11 +34,8 @@ const Services = () => {
               key={s.name}
               name={s.name}
               short={s.short}
-              index={i}
               discoverLabel={discoverLabel}
-              bookLabel={bookLabel}
               onDiscover={() => setOpenIdx(i)}
-              bookingUrl={BOOKING_URL}
             />
           ))}
         </div>
