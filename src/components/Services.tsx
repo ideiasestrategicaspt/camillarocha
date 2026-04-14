@@ -56,9 +56,10 @@ const Services = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-outline-gold inline-block"
+            className="btn-outline-gold inline-flex items-center gap-2 px-6 py-3"
           >
-            {whatsappLabel}
+            <MessageCircle size={16} />
+            WhatsApp
           </a>
         </div>
       </div>
