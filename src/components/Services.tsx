@@ -42,6 +42,17 @@ const Services = () => {
             />
           ))}
         </div>
+
+        <div className="text-center mt-16">
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gold inline-block"
+          >
+            {bookLabel}
+          </a>
+        </div>
       </div>
 
       {/* Modal */}
@@ -85,14 +96,11 @@ const Services = () => {
 interface ServiceItemProps {
   name: string;
   short: string;
-  index: number;
   discoverLabel: string;
-  bookLabel: string;
   onDiscover: () => void;
-  bookingUrl: string;
 }
 
-const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, bookingUrl }: ServiceItemProps) => {
+const ServiceItem = ({ name, short, discoverLabel, onDiscover }: ServiceItemProps) => {
   const { ref, visible } = useScrollReveal(0.1);
 
   return (
@@ -108,21 +116,13 @@ const ServiceItem = ({ name, short, discoverLabel, bookLabel, onDiscover, bookin
           {short}
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-1 md:gap-4 flex-shrink-0">
+      <div className="flex-shrink-0">
         <button
           onClick={onDiscover}
           className="btn-outline-gold text-[8px] md:text-xs px-2 py-1 md:px-6 md:py-3 active:scale-95 transition-transform whitespace-nowrap"
         >
           {discoverLabel}
         </button>
-        <a
-          href={bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-gold text-[8px] md:text-xs px-2 py-1 md:px-10 md:py-5 active:scale-95 transition-transform text-center whitespace-nowrap"
-        >
-          {bookLabel}
-        </a>
       </div>
     </div>
   );
