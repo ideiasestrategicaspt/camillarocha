@@ -84,7 +84,7 @@ const Services = () => {
             <h3 className="font-display text-2xl md:text-3xl font-light text-foreground mb-6">
               {services[openIdx].name}
             </h3>
-            <p className="font-body text-sm leading-relaxed text-muted-foreground mb-8">
+            <p className="font-body text-sm leading-relaxed text-muted-foreground mb-8 whitespace-pre-line">
               {services[openIdx].description}
             </p>
             <a
