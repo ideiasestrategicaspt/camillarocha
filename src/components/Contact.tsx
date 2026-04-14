@@ -2,6 +2,7 @@ import { useLang } from "@/hooks/use-lang";
 import { translations } from "@/lib/translations";
 import { MapPin, Clock, MessageCircle } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import Footer from "@/components/Footer";
 
 const BOOKING_URL = "https://camilla-rocha-brows.salonized.com/widget_bookings/new";
 const INSTAGRAM_URL = "https://instagram.com/camillarochabrows";
@@ -99,11 +100,7 @@ const Contact = () => {
       </div>
 
       {/* Footer */}
-      <div className="border-t border-gold/15 py-8 text-center">
-        <p className="font-body text-[10px] tracking-[0.2em] uppercase text-muted-foreground">
-          © {new Date().getFullYear()} Camilla Rocha Brows
-        </p>
-      </div>
+      <Footer />
     </section>
   );
 };
