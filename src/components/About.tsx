@@ -39,7 +39,7 @@ const About = () => {
             <p className="font-display text-2xl md:text-3xl font-light leading-relaxed text-foreground mb-6">
               {t.text1}
             </p>
-            <p className="font-body text-sm leading-relaxed text-muted-foreground">
+            <p className="font-body text-sm leading-relaxed text-muted-foreground text-justify">
               {t.text2}
             </p>
           </div>

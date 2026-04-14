@@ -28,7 +28,7 @@ export const translations = {
   about: {
     fr: {
       text1: "Camilla Rocha ",
-      text2: "Son approche est basée sur la précision, la correction et l'adaptation parfaite à chaque visage.",
+      text2: "Avec plus de 6 ans d’expérience dans l’univers du sourcil, j’apporte au Luxembourg une approche centrée sur la beauté naturelle : sublimer sans transformer. Mon expertise, enrichie par plus de 10 spécialisations, me permet de créer des sourcils harmonieux, durables et adaptés à chaque visage, tout en respectant l’identité de chacun.",
     },
     en: {
       text1: "Camilla Rocha ",
