@@ -27,11 +27,11 @@ export const translations = {
   },
   about: {
     fr: {
-      text1: "Camilla Rocha est spécialiste en sourcils et micropigmentation naturelle depuis plus de 6 ans.",
+      text1: "Camilla Rocha ",
       text2: "Son approche est basée sur la précision, la correction et l'adaptation parfaite à chaque visage.",
     },
     en: {
-      text1: "Camilla Rocha has been a specialist in eyebrows and natural micropigmentation for over 6 years.",
+      text1: "Camilla Rocha ",
       text2: "Her approach is based on precision, correction, and perfect adaptation to each face.",
     },
   },
