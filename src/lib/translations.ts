@@ -78,7 +78,7 @@ export const translations = {
       {
         name: "Henné ou Teinture Sourcils",
         short: "Teinture naturelle pour des sourcils définis et structurés",
-        description: "Le Henné sourcils est une coloration semi-permanente à base de henné naturel, qui teinte la peau pour un effet de remplissage visible et naturel. Il permet de redessiner la forme du sourcil, de combler les zones clairsemées et d'intensifier la couleur. Le résultat dure entre 7 et 10 jours et constitue une alternative douce pour celles qui souhaitent structurer leurs sourcils sans micropigmentation. La teinture de sourcils, quant à elle, dure de 2 à 4 semaines et colore uniquement les poils, sans teinter la peau comme le henné.",
+        description: "Le Henné sourcils est une coloration semi-permanente à base de henné naturel, qui teinte la peau pour un effet de remplissage visible et naturel. Il permet de redessiner la forme du sourcil, de combler les zones clairsemées et d'intensifier la couleur. Le résultat dure entre 7 et 10 jours et constitue une alternative douce pour celles qui souhaitent structurer leurs sourcils sans micropigmentation. La teinture de sourcils, quant à elle, dure de 3  à 4 semaines et colore uniquement les poils, sans teinter la peau comme le henné.",
       },
       {
         name: "Brow Lamination",
@@ -115,7 +115,7 @@ export const translations = {
       {
         name: "Henna or Tinting Brows",
         short: "Natural tinting for defined and structured eyebrows",
-        description: "Henna Brows is a semi-permanent coloring based on natural henna that tints both hair and skin for a visible, natural filling effect. It helps reshape the eyebrow, fill sparse areas, and intensify color. The result lasts between 7 and 10 days and is a gentle alternative for those who want to structure their eyebrows without micropigmentation. Eyebrow tinting, on the other hand, lasts 2 to 4 weeks and colors only the hair, without staining the skin like henna.",
+        description: "Henna Brows is a semi-permanent coloring based on natural henna that tints both hair and skin for a visible, natural filling effect. It helps reshape the eyebrow, fill sparse areas, and intensify color. The result lasts between 7 and 10 days and is a gentle alternative for those who want to structure their eyebrows without micropigmentation. Eyebrow tinting, on the other hand, lasts 3 to 4 weeks and colors only the hair, without staining the skin like henna.",
       },
       {
         name: "Brow Lamination",
