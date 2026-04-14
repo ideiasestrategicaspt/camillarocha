@@ -12,6 +12,9 @@ const Services = () => {
   const intro = translations.servicesIntro[lang];
   const discoverLabel = translations.discover[lang];
   const bookLabel = translations.bookBtn[lang];
+  const whatsappLabel = translations.whatsappBtn[lang];
+  const whatsappMsg = translations.whatsappMsg[lang];
+  const whatsappUrl = `https://wa.me/352661114723?text=${encodeURIComponent(whatsappMsg)}`;
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   const { ref: introRef, visible: introVisible } = useScrollReveal();
@@ -40,7 +43,7 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="text-center mt-16">
+        <div className="flex justify-center gap-4 mt-16">
           <a
             href={BOOKING_URL}
             target="_blank"
@@ -48,6 +51,14 @@ const Services = () => {
             className="btn-gold inline-block"
           >
             {bookLabel}
+          </a>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline-gold inline-block"
+          >
+            {whatsappLabel}
           </a>
         </div>
       </div>
