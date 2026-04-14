@@ -21,7 +21,7 @@ const Footer = () => {
               <button
                 key={item.key}
                 onClick={() => setOpen(item.key)}
-                className="font-body text-[10px] md:text-xs tracking-[0.15em] uppercase text-muted-foreground hover:text-gold transition-colors"
+                className="font-body text-[10px] md:text-xs tracking-[0.15em] uppercase text-foreground hover:text-gold transition-colors"
               >
                 {item.label}
               </button>
