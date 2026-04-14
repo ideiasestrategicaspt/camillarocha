@@ -63,7 +63,7 @@ export const translations = {
       {
         name: "Soft Shading",
         short: "Effet poudré doux pour un résultat subtil et élégant",
-        description: "Le Soft Shading est une technique de micropigmentation réalisée à la machine, qui dépose de fins points de pigment pour créer un effet poudré doux et homogène. Le rendu imite un maquillage léger et naturel, avec plus de densité visuelle que le Nanoblading. ",
+        description: "Le Soft Shading est ma propre adaptation de la technique de shading traditionnelle: une signature pensée pour sublimer sans alourdir.\n\nRéalisé à la machine, il consiste en un ombrage très doux et diffus, apportant du volume et une légère définition, tout en conservant un rendu naturel. Contrairement à certaines techniques de shading plus marquées et parfois artificielles, mon approche reste subtile et sur mesure, sans effet “maquillé” excessif.\n\nL’intensité est toujours adaptée à chaque visage, pour un résultat harmonieux, élégant et naturel.",
       },
       {
         name: "Technique Hybride",
