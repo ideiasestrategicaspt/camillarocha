@@ -16,7 +16,7 @@ export const translations = {
       badge3: "Précision",
     },
     en: {
-      headline: "Natural, precise eyebrows perfectly adapted to your face",
+      headline: "Natural-looking and precise brows perfectly designed for your face",
       sub: "Specialist in eyebrow restructuring and correction",
       experience: "Over 6 years of experience",
       cta: "Book an appointment",
