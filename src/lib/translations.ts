@@ -68,7 +68,7 @@ export const translations = {
       {
         name: "Technique Hybride",
         short: "Combinaison de poils et ombrage pour un résultat complet",
-        description: "La technique hybride combine le tracé de poils fins (Nanoblading) avec un léger ombrage en fond (Soft Shading), pour un résultat à la fois naturel et structuré. Elle permet de recréer de la matière là où les sourcils sont clairsemés, tout en ajoutant de la profondeur et de la définition. ",
+        description: "La technique hybride associe un tracé de poils fins (nanoblading) à un léger ombrage en fond (soft shading), pour un résultat à la fois naturel et structuré.\nElle permet de recréer de la densité dans les zones clairsemées, tout en apportant de la profondeur et de la définition.",
       },
       {
         name: "Design de Sourcils",
