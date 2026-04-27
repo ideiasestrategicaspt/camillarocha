@@ -32,7 +32,7 @@ export const translations = {
     },
     en: {
       text1: "Camilla Rocha ",
-      text2: "Her approach is based on precision, correction, and perfect adaptation to each face.",
+      text2: "With over 6 years of experience in the world of eyebrows, I bring to Luxembourg an approach centered on natural beauty: enhancing without transforming. My expertise, enriched by more than 10 specializations, allows me to create harmonious, long-lasting eyebrows perfectly adapted to each face, while respecting everyone's identity.",
     },
   },
   impact: {
