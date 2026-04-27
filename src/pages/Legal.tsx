@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { LangProvider, useLang } from "@/hooks/use-lang";
 import Header from "@/components/Header";
@@ -52,7 +52,8 @@ const LegalInner = ({ slug }: { slug: LegalSlug }) => {
 };
 
 const Legal = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { pathname } = useLocation();
+  const slug = pathname.replace(/^\/+/, "").replace(/\/+$/, "");
   if (!isLegalSlug(slug)) return <Navigate to="/" replace />;
   return (
     <LangProvider>
