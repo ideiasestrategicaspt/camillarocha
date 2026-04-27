@@ -32,7 +32,7 @@ export const translations = {
     },
     en: {
       text1: "Camilla Rocha ",
-      text2: "Her approach is based on precision, correction, and perfect adaptation to each face.",
+      text2: "With over 6 years of experience in the world of eyebrows, I bring to Luxembourg an approach centered on natural beauty: enhancing without transforming. My expertise, enriched by more than 10 specializations, allows me to create harmonious, long-lasting eyebrows perfectly adapted to each face, while respecting everyone's identity.",
     },
   },
   impact: {
@@ -95,27 +95,27 @@ export const translations = {
       {
         name: "Nanoblading",
         short: "Ultra-fine hair strokes drawn by hand for a hyper-natural effect",
-        description: "Nanoblading is a manual micropigmentation technique that involves drawing ultra-fine hair strokes into the epidermis using a nano blade. Each stroke is individually drawn to reproduce the appearance of natural hair, following the direction of growth and existing density. The result is a realistic, precise eyebrow perfectly adapted to the face. Ideal for normal to dry skin, this method offers a discreet and elegant finish without a makeup effect.",
+        description: "Nanoblading is a manual micropigmentation technique that involves drawing ultra-fine hair strokes into the epidermis using a nano blade. Each stroke is drawn individually to reproduce the appearance of a natural hair, following the direction of growth and existing density. The result is a realistic, precise eyebrow perfectly adapted to the face.",
       },
       {
         name: "Soft Shading",
         short: "Soft powdered effect for a subtle and elegant result",
-        description: "Soft Shading is a micropigmentation technique performed with a machine, depositing fine dots of pigment to create a soft, homogeneous powdered effect. The finish imitates light, natural makeup with more visual density than Nanoblading. This technique is particularly suited to combination, oily, or mature skin and is ideal for those seeking a subtle yet defined result.",
+        description: "Soft Shading is my own adaptation of the traditional shading technique: a signature designed to enhance without weighing down.\n\nPerformed with a machine, it consists of a very soft and diffused shading that brings volume and a light definition while maintaining a natural finish. Unlike some shading techniques that are more marked and sometimes artificial, my approach remains subtle and tailor-made, with no excessive “makeup” effect.\n\nThe intensity is always adapted to each face, for a harmonious, elegant, and natural result.",
       },
       {
         name: "Hybrid Technique",
         short: "Combination of hair strokes and shading for a complete result",
-        description: "The hybrid technique combines fine hair stroke drawing (Nanoblading) with a light background shading (Soft Shading), for a result that is both natural and structured. It recreates volume where eyebrows are sparse while adding depth and definition. It is the ideal technique for achieving a complete, balanced, and elegant eyebrow, suitable for all skin types.",
+        description: "The hybrid technique combines fine hair strokes (nanoblading) with a light background shading (soft shading), for a result that is both natural and structured.\nIt allows density to be recreated in sparse areas while bringing depth and definition.",
       },
       {
         name: "Eyebrow Design",
         short: "Personalized restructuring according to facial morphology",
-        description: "Eyebrow design is a complete morphological study carried out before any procedure. Camilla analyzes facial proportions, symmetry, gaze, and features to define the ideal shape, thickness, and curvature of the eyebrows. This step is essential to guarantee a harmonious, natural result perfectly adapted to each face. The design is drawn with pencil, adjusted with the client, and serves as the basis for any micropigmentation service.",
+        description: "Eyebrow design is a complete morphological study carried out before any procedure. It analyzes facial proportions, symmetry, gaze, and features to define the ideal shape, thickness, and curvature of the eyebrows. This step is essential to guarantee a harmonious, natural result perfectly adapted to each face.",
       },
       {
-        name: "Henna or Tinting Brows",
+        name: "Henna or Brow Tinting",
         short: "Natural tinting for defined and structured eyebrows",
-        description: "Henna Brows is a semi-permanent coloring based on natural henna that tints both hair and skin for a visible, natural filling effect. It helps reshape the eyebrow, fill sparse areas, and intensify color. The result lasts between 7 and 10 days and is a gentle alternative for those who want to structure their eyebrows without micropigmentation. Eyebrow tinting, on the other hand, lasts 3 to 4 weeks and colors only the hair, without staining the skin like henna.",
+        description: "Henna brows is a semi-permanent coloring based on natural henna that tints the skin for a visible and natural filling effect. It allows you to reshape the eyebrow, fill in sparse areas, and intensify the color. The result lasts between 7 and 10 days and is a gentle alternative for those who want to structure their eyebrows without micropigmentation. Brow tinting, on the other hand, lasts 3 to 4 weeks and only colors the hairs, without staining the skin like henna does.",
       },
       {
         name: "Brow Lamination",
@@ -125,7 +125,7 @@ export const translations = {
       {
         name: "Lash Lift",
         short: "Natural lash lift for an open, wide-eyed look",
-        description: "Lash Lift is a semi-permanent treatment that curls natural lashes from the root, giving them an elegant curve and an eye-opening effect. The treatment respects the natural lash structure and requires no extensions. The result lasts between 6 and 8 weeks. Can be accompanied by tinting to intensify the effect.",
+        description: "Lash Lift is a semi-permanent treatment that lifts natural lashes from the root, giving them an elegant curve and an eye-opening effect. The treatment respects the natural lash structure and requires no extensions. The result lasts between 6 and 8 weeks. Can be accompanied by tinting to intensify the effect.",
       },
     ],
   },
